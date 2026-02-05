@@ -2,53 +2,54 @@ import React from 'react';
 
 function App() {
     return (
-        <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 text-white selection:bg-white selection:text-black">
+        <div className="min-h-screen bg-black flex flex-col justify-between p-8 md:p-12 text-white overflow-hidden selection:bg-white selection:text-black">
 
-            {/* Main Content */}
-            <main className="text-center w-full max-w-5xl fade-in flex flex-col items-center justify-center min-h-[80vh]">
-                {/* Massive Headline - Regular Weight */}
-                <h1 className="text-6xl md:text-8xl lg:text-9xl font-normal tracking-tighter mb-8 leading-tight">
-                    COMING<br className="md:hidden" /> SOON
+            {/* Top / Header Placeholder (Optional, keeps center balanced) */}
+            <div className="w-full text-right opacity-0 hidden md:block">
+                <span>v1.0</span>
+            </div>
+
+            {/* Main Center Content */}
+            <main className="flex-1 flex flex-col items-center justify-center text-center fade-in">
+
+                {/* Massive Headline */}
+                <h1 className="text-7xl md:text-9xl lg:text-[10rem] font-normal tracking-tighter leading-none mb-12 text-white whitespace-nowrap">
+                    COMING SOON
                 </h1>
 
-                {/* Subtext */}
-                <p className="text-neutral-400 text-lg md:text-2xl font-light mb-16 tracking-wide max-w-2xl">
-                    Crafting a digital experience.
-                </p>
-
-                {/* Social Links - Clean White */}
-                <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center w-full">
-                    <a href="#" className="text-white hover:text-neutral-300 transition-colors text-lg font-normal border-b border-transparent hover:border-white pb-1 group">
+                {/* Social Links - Enlarged & White */}
+                <div className="flex flex-col md:flex-row gap-8 md:gap-24 items-center justify-center w-full">
+                    <a href="https://linkedin.com/in/YOUR_USER" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
                         LinkedIn
-                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                     </a>
-                    <a href="#" className="text-white hover:text-neutral-300 transition-colors text-lg font-normal border-b border-transparent hover:border-white pb-1 group">
+                    <a href="https://github.com/YOUR_USER" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
                         GitHub
-                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                     </a>
-                    <a href="#" className="text-white hover:text-neutral-300 transition-colors text-lg font-normal border-b border-transparent hover:border-white pb-1 group">
+                    <a href="https://x.com/YOUR_USER" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
                         Twitter
-                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                     </a>
-                </div>
-
-                {/* Minimalist Skeleton Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-24 w-full opacity-20 hover:opacity-40 transition-opacity duration-700">
-                    <div className="border border-white h-32 flex items-center justify-center">
-                        <span className="text-xs uppercase tracking-[0.2em]">Works</span>
-                    </div>
-                    <div className="border border-white h-32 flex items-center justify-center">
-                        <span className="text-xs uppercase tracking-[0.2em]">About</span>
-                    </div>
-                    <div className="border border-white h-32 flex items-center justify-center">
-                        <span className="text-xs uppercase tracking-[0.2em]">Contact</span>
-                    </div>
                 </div>
 
             </main>
 
-            <footer className="fixed bottom-6 text-neutral-600 text-xs uppercase tracking-widest">
-                &copy; {new Date().getFullYear()}
+            {/* Footer / Bottom Content */}
+            <footer className="w-full flex-col md:flex-row flex justify-between items-end md:items-center text-white border-t border-white/20 pt-6 mt-12 fade-in">
+
+                {/* "Crafting..." moved to bottom left */}
+                <div className="text-lg md:text-xl font-normal max-w-sm text-left mb-6 md:mb-0">
+                    Currently crafting a new digital experience.
+                </div>
+
+                {/* Skeleton Placeholders as small footer items */}
+                <div className="flex gap-8 opacity-50">
+                    <div className="text-sm uppercase tracking-widest border border-white/30 px-4 py-2">
+                        Selected Works
+                    </div>
+                    <div className="text-sm uppercase tracking-widest border border-white/30 px-4 py-2">
+                        Contact
+                    </div>
+                </div>
+
             </footer>
         </div>
     );
