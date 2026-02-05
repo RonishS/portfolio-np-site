@@ -19,14 +19,14 @@ function App() {
 
                 {/* Social Links - Enlarged & White */}
                 <div className="flex flex-col md:flex-row gap-8 md:gap-24 items-center justify-center w-full">
-                    <a href="https://linkedin.com/in/YOUR_USER" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
+                    <a href="https://www.linkedin.com/in/ronish-shrestha-776728243/" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
                         LinkedIn
                     </a>
-                    <a href="https://github.com/YOUR_USER" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
+                    <a href="https://github.com/RonishS" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
                         GitHub
                     </a>
-                    <a href="https://x.com/YOUR_USER" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
-                        Twitter
+                    <a href="https://www.instagram.com/r0nish.shrestha/" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-normal text-white hover:text-gray-300 transition-colors border-b-2 border-transparent hover:border-white pb-1">
+                        Instagram
                     </a>
                 </div>
 
