@@ -10,12 +10,12 @@ const Header = () => {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-[#0f1115]/95 backdrop-blur-md border-b border-transparent dark:border-white/5 transition-colors duration-300">
-            {/* Consistent Padding with Hero: px-6 md:px-16 lg:px-32 */}
-            <div className="w-full px-6 md:px-16 lg:px-32 h-28 flex items-center justify-between">
+            {/* Consistent Padding with Hero: px-5 md:px-14 lg:px-28 */}
+            <div className="w-full px-5 md:px-14 lg:px-28 h-24 flex items-center justify-between">
 
                 {/* Left: Logo/Name */}
                 <div className="flex-shrink-0">
-                    <a href="#" className="font-playfair text-2xl md:text-3xl font-bold tracking-wide text-gray-900 dark:text-gray-100 whitespace-nowrap hover:opacity-80 transition-opacity">
+                    <a href="#" className="font-playfair text-xl md:text-2xl font-bold tracking-wide text-gray-900 dark:text-gray-100 whitespace-nowrap hover:opacity-80 transition-opacity">
                         RONISH SHRESTHA
                     </a>
                 </div>
@@ -23,12 +23,12 @@ const Header = () => {
                 {/* Right: Navigation */}
                 <div className="flex items-center">
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-12 lg:gap-16">
+                    <nav className="hidden md:flex items-center gap-10 lg:gap-14">
                         {navItems.map((item) => (
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}
-                                className="font-chivo text-sm lg:text-base font-medium tracking-widest text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors relative group"
+                                className="font-chivo text-xs lg:text-sm font-medium tracking-widest text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors relative group"
                             >
                                 {item.toUpperCase()}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black dark:bg-white transition-all group-hover:w-full"></span>

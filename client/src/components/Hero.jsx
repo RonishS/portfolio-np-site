@@ -45,39 +45,39 @@ const Hero = () => {
     return (
         <section className="min-h-screen bg-white dark:bg-[#0f1115] transition-colors duration-300 flex items-center pt-28 pb-12">
 
-            {/* Fluid Container: px-6 md:px-16 lg:px-32 to match Header */}
-            <div className="w-full px-6 md:px-16 lg:px-32 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+            {/* Fluid Container: px-5 md:px-14 lg:px-28 to match Header */}
+            <div className="w-full px-5 md:px-14 lg:px-28 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
                 {/* Left Content (Text) - Spans 7 cols */}
-                <div className="flex flex-col gap-6 lg:gap-8 text-left order-2 lg:order-1 z-10 lg:col-span-7 xl:col-span-7">
+                <div className="flex flex-col gap-5 lg:gap-6 text-left order-2 lg:order-1 z-10 lg:col-span-7 xl:col-span-7">
                     <h1 className="font-roboto font-bold leading-none text-gray-900 dark:text-white">
-                        <span className="block text-5xl md:text-7xl mb-2 h-16 md:h-24 text-gray-800 dark:text-gray-100 items-center flex">
+                        <span className="block text-4xl md:text-6xl mb-2 h-14 md:h-20 text-gray-800 dark:text-gray-100 items-center flex">
                             <CyclingTypewriter words={['Hi,', 'Hello,', 'Hola,', 'Namaste,']} />
                         </span>
                         {/* Slightly responsive sizing to ensure single line */}
-                        <span className="block text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] 2xl:text-8xl tracking-tight -ml-[2px] whitespace-nowrap">
+                        <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] 2xl:text-7xl tracking-tight -ml-[2px] whitespace-nowrap">
                             I’m Ronish Shrestha
                         </span>
                     </h1>
 
-                    <h2 className="font-roboto font-medium text-2xl md:text-4xl text-gray-600 dark:text-gray-400 mt-2">
+                    <h2 className="font-roboto font-medium text-xl md:text-3xl text-gray-600 dark:text-gray-400 mt-2">
                         Aspiring QA Engineer | <br className="md:hidden" /> Capturing Moments
                     </h2>
 
-                    <div className="space-y-4 w-full max-w-3xl">
-                        <p className="font-roboto font-normal text-xl md:text-2xl leading-relaxed text-gray-700 dark:text-gray-300">
+                    <div className="space-y-3 w-full max-w-3xl">
+                        <p className="font-roboto font-normal text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300">
                             I focus on quality by noticing the details others often miss.
                         </p>
-                        <p className="font-roboto font-normal text-xl md:text-2xl leading-relaxed text-gray-700 dark:text-gray-300">
+                        <p className="font-roboto font-normal text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300">
                             Step into my world to witness the fusion of my craft, my vision, and my story.
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 md:gap-6 mt-6 md:mt-10">
-                        <button className="px-10 py-4 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white rounded-full text-lg md:text-xl font-medium shadow-sm hover:bg-gray-300 dark:hover:bg-gray-700 hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="flex flex-wrap gap-4 md:gap-5 mt-5 md:mt-8">
+                        <button className="px-8 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white rounded-full text-base md:text-lg font-medium shadow-sm hover:bg-gray-300 dark:hover:bg-gray-700 hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
                             View Resume
                         </button>
-                        <button className="px-10 py-4 bg-transparent border-2 border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-full text-lg md:text-xl font-medium hover:border-gray-900 dark:hover:border-gray-100 transition-all duration-300">
+                        <button className="px-8 py-3 bg-transparent border-2 border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-full text-base md:text-lg font-medium hover:border-gray-900 dark:hover:border-gray-100 transition-all duration-300">
                             Contact
                         </button>
                     </div>
@@ -90,7 +90,7 @@ const Hero = () => {
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-radial-gradient from-gray-200/50 to-transparent dark:from-white/5 dark:to-transparent blur-3xl rounded-full -z-10"></div>
 
                     {/* Image Container */}
-                    <div className="relative w-72 h-72 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden shadow-2xl border-[6px] border-white dark:border-gray-800 bg-gray-100 flex items-center justify-center transition-transform duration-500 hover:scale-[1.01]">
+                    <div className="relative w-64 h-64 md:w-[24rem] md:h-[24rem] lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl border-[6px] border-white dark:border-gray-800 bg-gray-100 flex items-center justify-center transition-transform duration-500 hover:scale-[1.01]">
                         <img
                             src="/assets/pfp.png"
                             onError={(e) => {
