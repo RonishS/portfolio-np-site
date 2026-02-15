@@ -10,8 +10,8 @@ const Header = () => {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-[#0f1115]/95 backdrop-blur-md border-b border-transparent dark:border-white/5 transition-colors duration-300">
-            {/* Fluid Container with generous padding to match Hero */}
-            <div className="w-full px-6 md:px-12 lg:px-24 h-24 flex items-center justify-between">
+            {/* Consistent Padding with Hero: px-6 md:px-16 lg:px-32 */}
+            <div className="w-full px-6 md:px-16 lg:px-32 h-28 flex items-center justify-between">
 
                 {/* Left: Logo/Name */}
                 <div className="flex-shrink-0">
@@ -23,7 +23,7 @@ const Header = () => {
                 {/* Right: Navigation */}
                 <div className="flex items-center">
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-10 lg:gap-16">
+                    <nav className="hidden md:flex items-center gap-12 lg:gap-16">
                         {navItems.map((item) => (
                             <a
                                 key={item}
