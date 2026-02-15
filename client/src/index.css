@@ -1,27 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-chivo: "Chivo", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
-body {
-  font-family: var(--font-sans);
-  background-color: #000000;
-  color: white;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@layer base {
+  body {
+    font-family: var(--font-roboto);
+    @apply transition-colors duration-300 text-gray-900;
   }
 }
 
-.fade-in {
-  animation: fadeIn 1.5s ease-out forwards;
+/* Custom Utilities */
+@utility glow-radial {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
 }
