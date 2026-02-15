@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Header = () => {
+const Header = ({ onInteract }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -10,8 +10,8 @@ const Header = () => {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-[#0f1115]/95 backdrop-blur-md border-b border-transparent dark:border-white/5 transition-colors duration-300">
-            {/* Consistent Padding with Hero: px-5 md:px-14 lg:px-28 */}
-            <div className="w-full px-5 md:px-14 lg:px-28 h-24 flex items-center justify-between">
+            {/* Responsive Container */}
+            <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16 h-28 flex items-center justify-between">
 
                 {/* Left: Logo/Name */}
                 <div className="flex-shrink-0">
@@ -28,6 +28,7 @@ const Header = () => {
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}
+                                onClick={onInteract}
                                 className="font-chivo text-xs lg:text-sm font-medium tracking-widest text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors relative group"
                             >
                                 {item.toUpperCase()}
@@ -56,7 +57,10 @@ const Header = () => {
                         <a
                             key={item}
                             href={`#${item.toLowerCase()}`}
-                            onClick={() => setIsMenuOpen(false)}
+                            onClick={(e) => {
+                                setIsMenuOpen(false);
+                                onInteract(e);
+                            }}
                             className="font-chivo text-xl font-medium tracking-wide text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
                         >
                             {item.toUpperCase()}
